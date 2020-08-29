@@ -29,17 +29,53 @@
         
     </div>   
 
-    <div class="small-container">
-        <div class="row row-2">
-            <h2>All Products</h2>
-            <select>
-                <option>Default sorting</option>
-                <option>Sort by price </option>
-                <option>Sort by popularity</option>
-                <option>Sort by Rating</option>
-                <option>Sort by Sale</option>
-            </select>
+    <!-- single product detail page -->
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/fashion/black.jpeg" width="100%" id="productImg">
+
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="images/fashion/grey.jpeg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/fashion/navy blue.jpeg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/fashion/black.jpeg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/fashion/5e18015b-d592-4ac8-9bbd-4450ab4aa499.jpeg" width="100%" class="small-img">
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="col-2">
+                <p>Home/ T-Shirt</p>
+                <h1>Printed T-Shirt</h1>
+                <h4>$30.00</h4>
+                <select>
+                    <option>Select Size</option>
+                    <option>XXL</option>
+                    <option>XL</option>
+                    <option>Large</option>
+                    <option>Medium</option>
+                    <option>Small</option>
+                </select>
+                <input type="number" value="1">
+                <a href="" class="btn">Add to Cart</a>
+
+                <h3>Product Detail <i class="fa fa-indent"></i></h3>
+                <br>
+                <p>This product is one of the best T-shirs you will find and the design on the shirt was design by our team from camouflart</p>
+            </div>
         </div>
+    </div>
+
+    <div class="small-container">
         <div class="row">
             <div class="col-4">
                 <img src="images/camo/product-1.jpeg" alt="">
@@ -88,62 +124,6 @@
                     <i class="fa fa-star-o"></i>
                 </div>
                 <p>$10.00</p>
-            </div>
-            <div class="col-4">
-                <img src="images/fashion/40001f93-a5c1-42ff-b42e-6c1793340116.jpeg" alt="">
-                <h4>Agyemang T-shirt</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>$10.00</p>
-            </div>
-            <div class="col-4">
-                <img src="images/fashion/1e787e30-cd90-4f6a-ad00-6af2a5ed1108.jpeg" alt="">
-                <h4>T-Shirt</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>$10.00</p>
-            </div>
-            <div class="col-4">
-                <img src="images/craft/f8e0967b-96c5-4373-b768-7988607c9de0.jpeg" alt="">
-                <h4>Graphics</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                </div>
-                <p>$10.00</p>
-            </div>
-            <div class="col-4">
-                <img src="images/craft/IMG-2209.JPG" alt="">
-                <h4>Digital</h4>
-                <div class="rating">
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star"></i>
-                    <i class="fa fa-star-half-o"></i>
-                    <i class="fa fa-star-o"></i>
-                </div>
-                <p>$10.00</p>
-            </div>
-            <div class="page-btn">
-                <span>1</span>
-                <span>2</span>
-                <span>3</span>
-                <span>4</span>
-                <span>&#8594;</span>
-                
             </div>
         </div>
         
@@ -197,6 +177,29 @@
                     MenuItems.style.maxHeight = "0px";
                 }
             }
+        </script>
+
+        <!-- prodcuts details page  -->
+        <script>
+            var productImg = document.getElementById("productImg");
+            var smallImg = document.getElementsByClassName("small-img");
+
+                smallImg[0].onClick = function()
+                {
+                    productImg.src = smallImg[0].src;
+                }
+                smallImg[1].onClick = function()
+                {
+                    productImg.src = smallImg[1].src;
+                }
+                smallImg[2].onClick = function()
+                {
+                    productImg.src = smallImg[2].src;
+                }
+                smallImg[3].onClick = function()
+                {
+                    productImg.src = smallImg[3].src;
+                }
         </script>
 
 
